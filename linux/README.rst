@@ -6,6 +6,8 @@ yet recognized by the kernel (a patch has been sent and accepted). As long
 as you're running an older kernel, you'll need the updated driver from this
 directory. The driver itself has been tested on Fedora 26 only (kernel 4.12.13).
 
+Update: as of January 2018, the patch is already part of kernel releases 3.18,
+4.4, 4.9 and 4.13.
 
 Driver Installation with DKMS
 -----------------------------
@@ -37,4 +39,4 @@ To later remove the module (when the modified driver is part of your kernel):
 
 ::
 
-    # dkms remove cp210x/1.0.0
+    # dkms remove cp210x/1.0.0 --all
